@@ -1,0 +1,61 @@
+// Place all the styles related to the uploads controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dropzone .dz-preview, .dropzone-previews .dz-preview {
+  min-height: 168px;
+  width: 115px;
+}
+.dropzone .dz-preview .dz-details {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.dz-filename span {
+  z-index: 10;
+  position: absolute;
+  background: rgba(200,200,200,0.5);
+  width: 100px;
+  text-overflow: ellipsis;
+  /* Required for text-overflow to work. */
+  white-space: wrap;
+  overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-error-message, .dropzone-previews .dz-preview .dz-error-message {
+  min-width: 90px;
+  max-width: 100px;
+  padding: 8px 1px;
+  top: -50px;
+  position: relative;
+  height: 20px;
+}
+
+.dropzone .dz-preview .dz-error-message span {
+  width: 100px;
+  height: 90px;
+  font-size: .8em;
+  position: absolute;
+  left: -1px;
+  top: -50px;
+  overflow: auto;
+  background: rgba(245,245,245,1);
+  padding: 3px;
+  text-overflow: normal;
+  white-space: wrap;
+}
+
+.dz-details img {
+  position: absolute;
+  top: 0px;
+}
+
+.dropzone a.dz-remove, .dropzone-previews a.dz-remove {
+  margin-top: 8px;
+  text-overflow: ellipsis;
+}
+
+.dropzone a.dz-cancel, .dropzone-previews a.dz-cancel {
+  margin-top: 10px;
+
+}
