@@ -1,0 +1,24 @@
+<h2>Uploads</h2>
+<hr>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>File Name:</th>
+      <th>File Link:</th>
+      <th>File Type:</th>
+      <th>File Size:</th>
+      <th>Delete:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @uploads.each do |upload| %>
+      <tr>
+        <td><%= upload.image_file_name %></td>
+        <td><%= link_to "Download", download_path(upload.id) %></td>
+        <td><%= upload.image_content_type %></td>
+        <td><%= upload.image_file_size %>KB</td>
+        <td><%= link_to "Remove", upload, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
