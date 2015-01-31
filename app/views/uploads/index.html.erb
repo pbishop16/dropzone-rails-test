@@ -17,7 +17,7 @@
         <td><%= link_to "Download", download_path(upload.id) %></td>
         <td><%= upload.image_content_type %></td>
         <td><%= upload.image_file_size %>KB</td>
-        <td><%= link_to "Remove", upload, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %></td>
+        <td><%= link_to "Remove", upload, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
